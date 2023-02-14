@@ -35,9 +35,10 @@ SELECT COUNT(*) AS 'Departments of university'
 FROM `departments`;
 
 -- 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
-​
-​
-​
+SELECT COUNT(*) AS 'Teachers without phone number' 
+FROM `teachers`
+WHERE `phone` IS NULL;
+
 -- ------------------------------------------ QUERY CON GROUP BY
 ​
 ​
