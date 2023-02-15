@@ -8,7 +8,7 @@ ON `degrees`.`id` = `students`.`degree_id`
 WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
 
 -- 2. Selezionare tutti i Corsi di Laurea del Dipartimento di Neuroscienze
-SELECT `degrees`.`name` AS 'Corso di laurea', --`departments`.`name` AS 'Dipartimento'
+SELECT `degrees`.`name` AS 'Degree', --`departments`.`name` AS 'Department'
 FROM `degrees`
 JOIN `departments`
 ON `departments`.`id` = `degrees`.`department_id`
